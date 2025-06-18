@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: osint-telegram-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: TOKEN
+        value: PASTE_YOUR_TELEGRAM_BOT_TOKEN_HERE
